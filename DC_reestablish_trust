@@ -1,0 +1,4 @@
+Reset-ComputerMachinePassword -Server MyDC -Credential contoso\admin
+
+#Returns $true if operation is successful
+Test-ComputerSecureChannel -Repair -Server MyDC -Credential contoso\admin
